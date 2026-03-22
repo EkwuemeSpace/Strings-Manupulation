@@ -8,8 +8,6 @@ import (
 
 ## 🔥 Mini Challenge!
 
-This is slightly harder — think carefully!
-
 Write a program that:
 1. Takes this string:
 ```
