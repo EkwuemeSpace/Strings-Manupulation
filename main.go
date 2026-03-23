@@ -31,7 +31,7 @@ func analyzeString(s string) {
 	fmt.Println("reverse", reveres(s))
 	fmt.Println("palindrome", isPalindrome(s))
 	// no idea on how to access most frequent character
-
+	fmt.Println(frequentChar(string(s)))
 
 	fmt.Println("No duplictae:", removeDuplicate(s))
 

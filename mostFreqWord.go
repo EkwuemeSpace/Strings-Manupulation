@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func frequentChar(s string) (rune, int) {
 	mostFreq := make(map[rune]int)
 
@@ -20,8 +18,4 @@ func frequentChar(s string) (rune, int) {
 	}
 
 	return topChar, topCount
-}
-
-func main() {
-	fmt.Println(frequentChar("innocent"))
 }
