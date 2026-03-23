@@ -4,6 +4,9 @@ func frequentChar(s string) (rune, int) {
 	mostFreq := make(map[rune]int)
 
 	for _, ch := range s {
+		if ch == ' ' {
+			continue
+		}
 		mostFreq[ch]++
 	}
 

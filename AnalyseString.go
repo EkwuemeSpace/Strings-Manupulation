@@ -24,19 +24,20 @@ func wordCOunter(s string) int {
 	return len(strings.Fields(strings.TrimSpace(s)))
 }
 func analyzeString(s string) {
-	fmt.Println("Analising string please wait...")
+	fmt.Println("Analysing string please wait...")
 
 	fmt.Println("character:", countCharcter(s))
 	fmt.Println("word:", wordCOunter(s))
 	fmt.Println("reverse", reveres(s))
 	fmt.Println("palindrome", isPalindrome(s))
-	// no idea on how to access most frequent character
-	fmt.Println(frequentChar(string(s)))
+	char, count := frequentChar(s)
+	fmt.Printf("most frequent: %c --> %d \n", char, count)
 
 	fmt.Println("No duplictae:", removeDuplicate(s))
 
 }
 
-func main() {
+/*func main() {
 	analyzeString("racecar is a racecar")
 }
+*/
